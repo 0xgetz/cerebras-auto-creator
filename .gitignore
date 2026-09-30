@@ -1,0 +1,17 @@
+# deps
+node_modules/
+package-lock.json
+
+# runtime output
+outputs/
+*.log
+
+# secrets
+.env
+.env.local
+*.pem
+
+# playwright
+playwright-report/
+test-results/
+.cache/

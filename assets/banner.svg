@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" width="1280" height="400" role="img" aria-label="Cerebras Auto Creator banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0e12"/>
+      <stop offset="55%" stop-color="#12161c"/>
+      <stop offset="100%" stop-color="#1a0d06"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff9a3c"/>
+      <stop offset="50%" stop-color="#ff5a1f"/>
+      <stop offset="100%" stop-color="#c81e00"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="400" fill="url(#bg)"/>
+  <g opacity="0.08" stroke="#ff7a1a" stroke-width="1">
+    <path d="M0 80 H1280 M0 160 H1280 M0 240 H1280 M0 320 H1280"/>
+    <path d="M120 0 V400 M320 0 V400 M520 0 V400 M720 0 V400 M920 0 V400 M1120 0 V400"/>
+  </g>
+
+  <!-- logo mark -->
+  <g transform="translate(180 200)">
+    <circle r="118" fill="none" stroke="url(#flame)" stroke-width="13" stroke-dasharray="12 10" filter="url(#glow)"/>
+    <circle r="84" fill="none" stroke="#ff6a1f" stroke-width="5" opacity="0.4"/>
+    <g stroke="#ff7a1a" stroke-width="6" stroke-linecap="round">
+      <path d="M0 -84 V-118"/><path d="M80 24 L112 44"/><path d="M-80 24 L-112 44"/>
+    </g>
+    <path d="M10 -48 L-28 6 L-2 6 L-12 50 L30 -8 L2 -8 Z" fill="#fff" filter="url(#glow)"/>
+  </g>
+
+  <!-- wordmark -->
+  <g font-family="ui-sans-serif, Segoe UI, Helvetica, Arial" fill="#eef3f9">
+    <text x="360" y="178" font-size="62" font-weight="800" letter-spacing="-1">Cerebras</text>
+    <text x="360" y="238" font-size="62" font-weight="800" letter-spacing="-1" fill="url(#flame)">Auto Creator</text>
+    <text x="364" y="288" font-size="23" fill="#8b96a5">Fresh inbox · magic-link login · onboarding · API key — automated</text>
+  </g>
+
+  <g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="18">
+    <g transform="translate(364 320)">
+      <rect x="0" y="-22" width="150" height="34" rx="17" fill="#161b21" stroke="#39424e"/>
+      <text x="18" y="2" fill="#31c48d">Node.js 18+</text>
+    </g>
+    <g transform="translate(528 320)">
+      <rect x="0" y="-22" width="168" height="34" rx="17" fill="#161b21" stroke="#39424e"/>
+      <text x="18" y="2" fill="#f0b429">Playwright</text>
+    </g>
+    <g transform="translate(710 320)">
+      <rect x="0" y="-22" width="128" height="34" rx="17" fill="#161b21" stroke="#39424e"/>
+      <text x="18" y="2" fill="#ff7a1a">MIT</text>
+    </g>
+  </g>
+</svg>

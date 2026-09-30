@@ -1,0 +1,48 @@
+{
+  "name": "cerebras-auto-creator",
+  "version": "1.0.0",
+  "description": "End-to-end Cerebras Cloud account creator: fresh temp email, magic-link login, onboarding, and API key generation.",
+  "type": "module",
+  "license": "MIT",
+  "author": "0xgetz",
+  "homepage": "https://github.com/0xgetz/cerebras-auto-creator#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xgetz/cerebras-auto-creator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/0xgetz/cerebras-auto-creator/issues"
+  },
+  "keywords": [
+    "cerebras",
+    "automation",
+    "playwright",
+    "account-creator",
+    "api-key",
+    "temp-mail",
+    "magic-link",
+    "browser-automation"
+  ],
+  "bin": {
+    "cerebras-create": "src/create.mjs"
+  },
+  "files": [
+    "src",
+    "assets",
+    "docs",
+    ".env.example",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node src/create.mjs",
+    "batch": "node src/batch.mjs",
+    "postinstall": "playwright install --with-deps chromium"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
